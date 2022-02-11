@@ -17,13 +17,19 @@ body main {
           align-items: center;
 }
 
+body .container {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
 .card {
   position: relative;
   min-width: 300px;
+  max-width: 900px;
 }
 
 .card .card-img-top {
-  height: 240px;
+  height: 100%;
 }
 
 .card .card-body {
@@ -45,6 +51,10 @@ body main {
 .card .bottom-text .share {
   background-color: #ecf2f8;
   padding: 10px;
+}
+
+.card .bottom-text .share[src='http://127.0.0.1:5500/nowe/frontendmentor/7%20-%20Article%20preview%20component/images/icon-share-active.svg'] {
+  background-color: #6d7f97;
 }
 
 .card .share-belt {
@@ -70,12 +80,13 @@ body main {
 }
 
 .card .share-belt.active .share-active-icon {
-  background-color: #9eafc2;
+  background-color: #6d7f97;
   padding: 10px;
+  margin-right: 19px;
 }
 
 .card .share-box * {
-  margin-left: 17px;
+  margin-left: 10px;
 }
 
 .card .share-box p {
@@ -86,5 +97,46 @@ body main {
 .card .author img {
   width: 15%;
   height: 15%;
+}
+
+@media (min-width: 995px) {
+  .card .card-body {
+    padding: 40px;
+  }
+  .card .first-text {
+    font-size: 23px;
+  }
+  .card .second-text {
+    font-size: 14px;
+  }
+}
+
+.popover {
+  background-color: #48556a;
+  border-radius: 10px;
+}
+
+.bs-popover-top > .popover-arrow::after {
+  border-top-color: #48556a;
+}
+
+.bs-popover-start > .popover-arrow::after {
+  border-left-color: #48556a;
+}
+
+.popover-body {
+  padding: 15px 27px;
+}
+
+.popover-body p {
+  color: #9eafc2;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  line-height: 200%;
+}
+
+.popover-body img {
+  margin-left: 17px;
 }
 /*# sourceMappingURL=style.css.map */

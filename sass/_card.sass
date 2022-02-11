@@ -1,8 +1,9 @@
 .card
     position: relative
     min-width: 300px
+    max-width: 900px
     .card-img-top
-        height: 240px
+        height: 100%
     .card-body
         padding: 35px
         padding-bottom: 25px
@@ -17,6 +18,8 @@
         .share
             background-color: hsl(210, 46%, 95%)
             padding: 10px
+        .share[src = 'http://127.0.0.1:5500/nowe/frontendmentor/7%20-%20Article%20preview%20component/images/icon-share-active.svg']
+            background-color: hsl(214, 17%, 51%)
     .share-belt
         display: none
     .share-belt.active
@@ -30,11 +33,12 @@
         right: 0
         background-color: hsl(217, 19%, 35%)
         .share-active-icon
-            background-color: hsl(212, 23%, 69%)
+            background-color: hsl(214, 17%, 51%)
             padding: 10px
+            margin-right: 19px
     .share-box
         *
-            margin-left: 17px
+            margin-left: 10px
         p
             color: hsl(212, 23%, 69%)
             letter-spacing: 5px
@@ -42,3 +46,12 @@
         img
             width: 15%
             height: 15%
+
+@media (min-width: 995px)
+    .card
+        .card-body
+            padding: 40px
+        .first-text
+            font-size: 23px
+        .second-text
+            font-size: 14px
