@@ -49,11 +49,15 @@ body .container {
 }
 
 .card .bottom-text .share {
+  background-image: url("../images/icon-share.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-color: #ecf2f8;
-  padding: 10px;
+  padding: 17px;
 }
 
-.card .bottom-text .share[src='http://127.0.0.1:5500/nowe/frontendmentor/7%20-%20Article%20preview%20component/images/icon-share-active.svg'] {
+.card .bottom-text .share.active {
+  background-image: url("../images/icon-share-active.svg");
   background-color: #6d7f97;
 }
 

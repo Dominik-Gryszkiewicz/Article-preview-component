@@ -16,9 +16,13 @@
         line-height: 160%
     .bottom-text
         .share
+            background-image: url('../images/icon-share.svg')
+            background-repeat: no-repeat
+            background-position: center center
             background-color: hsl(210, 46%, 95%)
-            padding: 10px
-        .share[src = 'http://127.0.0.1:5500/nowe/frontendmentor/7%20-%20Article%20preview%20component/images/icon-share-active.svg']
+            padding: 17px
+        .share.active
+            background-image: url('../images/icon-share-active.svg')
             background-color: hsl(214, 17%, 51%)
     .share-belt
         display: none
